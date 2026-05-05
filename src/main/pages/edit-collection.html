@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rename Collection &mdash; CardCollector</title>
+  <link rel="stylesheet" href="/src/main/css/reset.css" />
+  <link rel="stylesheet" href="/src/main/css/variables.css" />
+  <link rel="stylesheet" href="/src/main/css/typography.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/header.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/footer.css" />
+  <link rel="stylesheet" href="/src/main/css/pages/edit-collection.css" />
+</head>
+<body class="page-edit-collection">
+
+  <div id="site-header"></div>
+
+  <main class="page-content">
+    <div class="container container-narrow">
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="/src/main/pages/collections.html">My Collections</a>
+        <span aria-hidden="true">/</span>
+        <span id="breadcrumb-collection-name">Rename</span>
+      </nav>
+
+      <h1>Rename Collection</h1>
+
+      <form class="form-card" id="form-edit-collection" novalidate>
+        <input type="hidden" id="collection-id" name="id" />
+
+        <div class="form-group">
+          <label for="collection-name">Collection Name</label>
+          <input
+            type="text"
+            id="collection-name"
+            name="nameCollection"
+            placeholder="New collection name"
+            required
+          />
+        </div>
+
+        <div class="form-error" id="edit-error" role="alert" hidden></div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Save Changes</button>
+          <a href="/src/main/pages/collections.html" class="btn btn-secondary">Cancel</a>
+        </div>
+      </form>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/src/assets/js/components.js"></script>
+  <script src="/src/assets/js/edit-collection.js"></script>
+</body>
+</html>

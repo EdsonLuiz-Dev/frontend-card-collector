@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Card &mdash; CardCollector</title>
+  <link rel="stylesheet" href="/src/main/css/reset.css" />
+  <link rel="stylesheet" href="/src/main/css/variables.css" />
+  <link rel="stylesheet" href="/src/main/css/typography.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/header.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/footer.css" />
+  <link rel="stylesheet" href="/src/main/css/pages/add-card.css" />
+</head>
+<body class="page-add-card">
+
+  <div id="site-header"></div>
+
+  <main class="page-content">
+    <div class="container container-narrow">
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="/src/main/pages/collections.html">My Collections</a>
+        <span aria-hidden="true">/</span>
+        <a href="#" id="breadcrumb-collection-link">Collection</a>
+        <span aria-hidden="true">/</span>
+        <span>Add Card</span>
+      </nav>
+
+      <h1>Add Card</h1>
+
+      <section class="section-search" id="section-search">
+        <h2>Search Card</h2>
+        <form class="form-inline" id="form-search-card" novalidate>
+          <div class="form-group">
+            <label for="card-name" class="sr-only">Card name</label>
+            <input
+              type="text"
+              id="card-name"
+              name="name"
+              placeholder="Exact card name (e.g. Lightning Bolt)"
+              required
+            />
+          </div>
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <div class="form-error" id="search-error" role="alert" hidden></div>
+      </section>
+
+      <section class="section-card-result" id="section-card-result" hidden>
+        <h2>Card Found</h2>
+
+        <div class="card-preview">
+          <div class="card-preview-image">
+            <img id="preview-image" src="" alt="" />
+          </div>
+          <div class="card-preview-info">
+            <h3 id="preview-name"></h3>
+
+            <form class="form-card" id="form-add-card" novalidate>
+              <input type="hidden" id="add-card-name" name="name" />
+              <input type="hidden" id="add-collection-id" name="collectionId" />
+
+              <div class="form-group">
+                <label for="card-set">Select Set / Printing</label>
+                <select id="card-set" name="set" required></select>
+              </div>
+
+              <div class="form-error" id="add-error" role="alert" hidden></div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Add to Collection</button>
+                <button class="btn btn-secondary" type="button" id="btn-search-again">Search Again</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-add-success" id="section-add-success" hidden>
+        <div class="success-message">
+          <p><strong id="success-card-name"></strong> was added to your collection!</p>
+          <div class="success-actions">
+            <button class="btn btn-primary" type="button" id="btn-add-another">Add Another Card</button>
+            <a href="#" class="btn btn-secondary" id="btn-back-to-collection">Back to Collection</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/src/assets/js/components.js"></script>
+  <script src="/src/assets/js/add-card.js"></script>
+</body>
+</html>

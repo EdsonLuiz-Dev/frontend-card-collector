@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login &mdash; CardCollector</title>
+  <link rel="stylesheet" href="/src/main/css/reset.css" />
+  <link rel="stylesheet" href="/src/main/css/variables.css" />
+  <link rel="stylesheet" href="/src/main/css/typography.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/header.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/footer.css" />
+  <link rel="stylesheet" href="/src/main/css/pages/login.css" />
+</head>
+<body class="page-auth">
+
+  <div id="site-header"></div>
+
+  <main class="auth-container">
+    <div class="container">
+      <h1 class="auth-title">CardCollector</h1>
+      <h2 class="auth-subtitle">Sign In</h2>
+
+      <div class="form-container">
+        <form class="auth-form" id="form-login" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Your password"
+            required
+            autocomplete="current-password"
+          />
+        </div>
+
+        <div class="form-error" id="login-error" role="alert" hidden></div>
+
+        <button class="btn btn-primary btn-full" type="submit">Sign In</button>
+      </form>
+      </div>
+
+      <p class="auth-redirect">
+        Don't have an account? <a href="/src/main/pages/register.html">Register</a>
+      </p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/src/assets/js/components.js"></script>
+  <script src="/src/assets/js/login.js"></script>
+</body>
+</html>

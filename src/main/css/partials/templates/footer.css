@@ -1,0 +1,13 @@
+.site-footer {
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-block: 80px;
+}
+
+.site-footer p {
+    color: var(--color-white);
+}

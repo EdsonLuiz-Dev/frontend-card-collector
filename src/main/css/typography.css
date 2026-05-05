@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-base);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+li {
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  border-left: 3px solid var(--color-secondary);
+  padding-left: 1rem;
+  color: var(--color-secondary);
+}

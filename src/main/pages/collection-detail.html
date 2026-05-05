@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collection &mdash; CardCollector</title>
+  <link rel="stylesheet" href="/src/main/css/reset.css" />
+  <link rel="stylesheet" href="/src/main/css/variables.css" />
+  <link rel="stylesheet" href="/src/main/css/typography.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/header.css" />
+  <link rel="stylesheet" href="/src/main/css/partials/templates/footer.css" />
+  <link rel="stylesheet" href="/src/main/css/pages/collection-detail.css" />
+</head>
+<body class="page-collection-detail">
+
+  <div id="site-header"></div>
+
+  <main class="page-content">
+    <div class="container">
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="/src/main/pages/collections.html">My Collections</a>
+        <span aria-hidden="true">/</span>
+        <span id="breadcrumb-collection-name">Collection</span>
+      </nav>
+
+      <div class="collection-header">
+        <h1 id="collection-name">Collection</h1>
+        <div class="collection-header-actions">
+          <a href="#" class="btn btn-primary" id="btn-add-card">+ Add Card</a>
+          <a href="#" class="btn btn-secondary" id="btn-edit-collection">Rename</a>
+        </div>
+      </div>
+
+      <div class="collection-stats">
+        <span id="card-count">0</span> cards in this collection
+      </div>
+
+      <div class="cards-empty" id="cards-empty" hidden>
+        <p>No cards yet. Add some cards to this collection!</p>
+      </div>
+
+      <ul class="card-list" id="card-list"></ul>
+
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="/src/assets/js/components.js"></script>
+  <script src="/src/assets/js/collection-detail.js"></script>
+</body>
+</html>
