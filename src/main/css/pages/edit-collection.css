@@ -1,0 +1,9 @@
+.page-edit-collection h1 {
+    margin-bottom: 32px;
+}
+
+.form-card {
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 10px;
+}

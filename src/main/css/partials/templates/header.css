@@ -22,3 +22,41 @@
     gap: 10px;
     align-items: center;
 }
+
+.nav-brand {
+    color: var(--color-white);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-brand:hover {
+    text-decoration: none;
+    opacity: 0.85;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.nav-username {
+    color: var(--color-white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
