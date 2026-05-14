@@ -1,6 +1,7 @@
 import { API_URL } from './config.js';
 
 const loginUser = async (dados) => {
+
     const res = await fetch(`${API_URL}/login`,{
         method: 'POST',
         headers: {
@@ -8,6 +9,16 @@ const loginUser = async (dados) => {
         },
         body: JSON.stringify(dados)
     });
+
+    if(res.status == 400) {
+
+        const errorMessage = document.getElementById('login-error');
+
+        errorMessage.textContent = "Campos preenchidos incorretamente!";
+        errorMessage.hidden = false;
+
+        return null;
+    }
 
     return res.json();
 };
@@ -25,6 +36,8 @@ addEventListener("DOMContentLoaded", async () => {
         };
 
         const res = await loginUser(dados);
+
+        if(!res) return;
 
         localStorage.setItem('authorization', JSON.stringify(res.token));
         window.location.href = 'collections.html';
