@@ -40,6 +40,42 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card-edit-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.card-edit-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-edit-form label {
+    font-size: 0.75rem;
+    color: var(--color-secondary);
+}
+
+.card-edit-form .edit-qty-input {
+    width: 72px;
+}
+
+.card-edit-actions {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+
+.edit-error {
+    width: 100%;
+    color: red;
+    font-size: 0.875rem;
 }
 
 .card-image {
@@ -76,6 +112,3 @@
     color: var(--color-secondary);
 }
 
-.card-actions {
-    flex-shrink: 0;
-}

@@ -39,7 +39,7 @@ addEventListener("DOMContentLoaded", async () => {
 
         if(!res) return;
 
-        localStorage.setItem('authorization', JSON.stringify(res.token));
+        localStorage.setItem('authorization', res.token);
         window.location.href = 'collections.html';
     });
 });

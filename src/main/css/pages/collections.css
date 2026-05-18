@@ -31,10 +31,28 @@
     background-color: var(--color-white);
     border-radius: 8px;
     padding: 16px 20px;
+}
+
+.collection-item-view,
+.collection-item-edit {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
+    width: 100%;
+}
+
+.collection-item-view[hidden],
+.collection-item-edit[hidden] {
+    display: none;
+}
+
+.collection-item-edit {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.collection-item-edit input {
+    flex: 1;
 }
 
 .collection-item-name {

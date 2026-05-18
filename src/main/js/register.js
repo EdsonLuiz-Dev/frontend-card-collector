@@ -31,7 +31,7 @@ addEventListener('DOMContentLoaded', () => {
 
         const res = await resgisterUser(dados);
 
-        localStorage.setItem('authorization', JSON.stringify(res.token));
+        localStorage.setItem('authorization', res.token);
 
         window.location.href = 'collections.html'
     });

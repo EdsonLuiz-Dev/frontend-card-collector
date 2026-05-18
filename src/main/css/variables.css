@@ -20,6 +20,13 @@ body {
   font-family: var(--font-base);
   background-color: var(--color-bg);
   color: var(--color-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .container {
