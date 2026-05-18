@@ -38,3 +38,13 @@
     font-size: 0.875rem;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .auth-container {
+        padding-block: 40px;
+    }
+
+    .auth-box {
+        padding: 24px 20px;
+    }
+}

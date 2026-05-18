@@ -38,3 +38,14 @@
 .form-group input {
     padding: 5px;
 }
+
+@media (max-width: 600px) {
+    .auth-container .container {
+        padding-block: 60px;
+    }
+
+    .form-container {
+        padding: 20px;
+        width: 100%;
+    }
+}

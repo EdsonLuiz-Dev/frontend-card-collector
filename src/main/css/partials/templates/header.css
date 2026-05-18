@@ -60,3 +60,22 @@
     font-weight: 500;
     opacity: 0.85;
 }
+
+@media (max-width: 600px) {
+    .site-header {
+        padding-block: 14px;
+    }
+
+    .site-header nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-brand {
+        font-size: 1.1rem;
+    }
+}

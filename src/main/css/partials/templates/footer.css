@@ -11,3 +11,9 @@
 .site-footer p {
     color: var(--color-white);
 }
+
+@media (max-width: 600px) {
+    .site-footer {
+        padding-block: 40px;
+    }
+}

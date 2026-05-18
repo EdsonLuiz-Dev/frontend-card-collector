@@ -73,3 +73,18 @@
     gap: 8px;
     flex-shrink: 0;
 }
+
+@media (max-width: 600px) {
+    .collection-item {
+        padding: 14px 16px;
+    }
+
+    .collection-item-view {
+        flex-wrap: wrap;
+    }
+
+    .collection-item-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

@@ -112,3 +112,18 @@
     color: var(--color-secondary);
 }
 
+@media (max-width: 600px) {
+    .card-item {
+        align-items: flex-start;
+    }
+
+    .card-edit-form {
+        width: 100%;
+    }
+
+    .card-edit-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+

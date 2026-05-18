@@ -64,7 +64,12 @@
     margin-top: 8px;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
+    .section-search,
+    .section-card-result {
+        padding: 16px;
+    }
+
     .card-preview {
         flex-direction: column;
     }
