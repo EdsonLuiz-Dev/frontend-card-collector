@@ -9,7 +9,7 @@ const authHeaders = () => ({
 
 const redirectIfUnauth = (status) => {
     if (status === 401) {
-        window.location.href = 'login.html';
+        window.location.href = '/src/main/pages/login.html';
         return true;
     }
     return false;
@@ -73,7 +73,7 @@ const renderCollections = (collections) => {
         li.className = 'collection-item';
         li.innerHTML = `
             <div class="collection-item-view">
-                <a class="collection-item-name" href="collection-detail.html?id=${col._id}">${col.nameCollection}</a>
+                <a class="collection-item-name" href="/src/main/pages/collection-detail.html?id=${col._id}">${col.nameCollection}</a>
                 <span class="collection-count">${col.cards.length} cards</span>
                 <div class="collection-item-actions">
                     <button class="btn btn-secondary btn-rename-collection" data-id="${col._id}" data-name="${col.nameCollection}">Rename</button>
