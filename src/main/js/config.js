@@ -1,2 +1,2 @@
-export const API_URL = 'http://localhost:8080';
+export const API_URL = 'https://card-collection-psi.vercel.app/';
 export const API_TIMEOUT = 5000;
