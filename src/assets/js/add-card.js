@@ -49,7 +49,7 @@ const showToast = (message) => {
 
 addEventListener('DOMContentLoaded', () => {
     const collectionId = getCollectionId();
-    if (!collectionId) { location.href = '/src/main/pages/collections.html'; return; }
+    if (!collectionId) { location.href = '/index.html'; return; }
 
     document.getElementById('breadcrumb-collection-link').href = `/src/main/pages/collection-detail.html?id=${collectionId}`;
     document.getElementById('btn-back-to-collection').href = `/src/main/pages/collection-detail.html?id=${collectionId}`;

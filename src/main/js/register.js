@@ -33,7 +33,7 @@ addEventListener('DOMContentLoaded', () => {
 
         localStorage.setItem('authorization', res.token);
 
-        window.location.href = 'collections.html'
+        window.location.href = '/index.html'
     });
 
 })

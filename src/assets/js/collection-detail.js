@@ -143,9 +143,9 @@ const renderCards = (collection) => {
 
 const init = async () => {
     const collectionId = getCollectionId();
-    if (!collectionId) { location.href = '/src/main/pages/collections.html'; return; }
+    if (!collectionId) { location.href = '/index.html'; return; }
     const collection = await fetchCollection(collectionId);
-    if (!collection) { location.href = '/src/main/pages/collections.html'; return; }
+    if (!collection) { location.href = '/index.html'; return; }
     renderCards(collection);
 };
 

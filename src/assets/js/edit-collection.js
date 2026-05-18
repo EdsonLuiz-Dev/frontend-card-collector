@@ -24,7 +24,7 @@ const updateCollection = async (collectionId, nameCollection) => {
 
 addEventListener('DOMContentLoaded', () => {
     const { id: collectionId, name: currentName } = getParams();
-    if (!collectionId) { location.href = '/src/main/pages/collections.html'; return; }
+    if (!collectionId) { location.href = '/index.html'; return; }
 
     document.getElementById('collection-id').value = collectionId;
     if (currentName) {
@@ -49,6 +49,6 @@ addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        location.href = '/src/main/pages/collections.html';
+        location.href = '/index.html';
     });
 });
