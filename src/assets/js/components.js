@@ -13,7 +13,6 @@ async function initHeader() {
   if (isAuthPage) {
     btnLogout.style.display = 'none';
 
-    // Esconde o menu de navegação também
     const navLinks = document.querySelector('.nav-links');
     if (navLinks) navLinks.style.display = 'none';
   } else {

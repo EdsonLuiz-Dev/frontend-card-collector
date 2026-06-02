@@ -7,6 +7,7 @@ O front-end do projeto Card Collector é uma aplicação web responsiva projetad
 - André Augusto Rodrigues Martins (Documentação Técnica)
 - Edson Luiz (Desenvolvimento Front-end)
 - Vini Rizzato (Desenvolvimento Back-end)
+- Cristiano Almeida (Desenvolvimento Back-end)
 
 ## O Problema que Resolve
 
