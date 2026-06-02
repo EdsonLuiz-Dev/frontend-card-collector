@@ -7,10 +7,21 @@ async function loadPartial(path, targetId) {
 async function initHeader() {
   await loadPartial('/src/partials/templates/header.html', 'site-header');
 
-  document.getElementById('btn-logout').addEventListener('click', () => {
-    localStorage.removeItem('authorization');
-    window.location.href = '/src/main/pages/login.html';
-  });
+  const isAuthPage = window.location.pathname.includes('login') || window.location.pathname.includes('register');
+  const btnLogout = document.getElementById('btn-logout');
+
+  if (isAuthPage) {
+    btnLogout.style.display = 'none';
+
+    // Esconde o menu de navegação também
+    const navLinks = document.querySelector('.nav-links');
+    if (navLinks) navLinks.style.display = 'none';
+  } else {
+    btnLogout.addEventListener('click', () => {
+      localStorage.removeItem('authorization');
+      window.location.href = '/src/main/pages/login.html';
+    });
+  }
 }
 
 initHeader();
